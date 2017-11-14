@@ -11,5 +11,5 @@ data_dict = json.loads(decoded)
 
 print(data_dict)
 
-with open('solr_out_tmp.json', 'w') as out:
+with open('files/solr_out_tmp.json', 'w') as out:
     json.dump(data_dict, out, ensure_ascii=False)

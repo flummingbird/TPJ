@@ -3,10 +3,10 @@ import json
 titles = input("titles to check for filename?: ")
 sorl_file = input("solr_json to check for bad pids name?: ")
 
-with open('bounce-titles') as f:
+with open('files/bounce-titles') as f:
     title_list = f.read().splitlines()
 
- with open('solr-out.json', 'r', encoding='utf-8') as s:
+ with open('files/solr-out.json', 'r', encoding='utf-8') as s:
      solr_out =  s.read()
      data_dict = json.loads(solr_out)
 
