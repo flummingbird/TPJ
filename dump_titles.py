@@ -4,7 +4,7 @@ import json
 file_name = 'files/'
 file_name += input("outfile name?: ")
 
-with open('solr_out_tmp.json', 'r', encoding='utf-8') as s:
+with open('files/solr_out_tmp.json', 'r', encoding='utf-8') as s:
      solr_out =  s.read()
      data_dict = json.loads(solr_out)
 
